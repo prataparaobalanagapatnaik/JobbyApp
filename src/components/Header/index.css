@@ -1,55 +1,112 @@
-/*.header-section {
-  background-color: #272727;
-  height: 12vh;
+.navbar-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  justify-content: center;
+  background-color: #202020;
   position: sticky;
   top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
-.header-logo {
-  width: 150px;
-}
-
-.route-links-list {
-  list-style-type: none;
-  padding-left: 0px;
+.navbar-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.link-style {
-  text-decoration-line: none;
+.navbar-large-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.route-text {
-  color: #f1f5f9;
-  font-size: 18px;
-  font-weight: 500;
+.website-logo {
+  width: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    width: 165px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-mobile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-mobile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.nav-menu-item {
   font-family: 'Roboto';
-  margin-right: 15px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-.logout-button {
-  background-color: #6366f1;
-  border-width: 0px;
-  border-radius: 5px;
-  color: #f1f5f9;
+.menu-item {
+  text-decoration: none;
+  font-size: 22px;
+  color: #ffffff;
+}
+.btn-link {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+}
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logout-btn {
+  font-family: 'Roboto';
+  font-weight: 600;
   font-size: 14px;
-  font-weight: 500;
-  font-family: 'Roboto';
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 8px 30px;
+  color: #ffffff;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
   cursor: pointer;
   outline: none;
-  margin-left: 550px;
 }
-*/
+@media screen and (max-width: 767px) {
+  .navbar-large-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-mobile-container {
+    display: none;
+  }
+}

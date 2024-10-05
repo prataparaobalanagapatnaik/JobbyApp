@@ -1,13 +1,10 @@
-/*
 import {Route, Switch, Redirect} from 'react-router-dom'
-import Login from './components/Login'
 import Home from './components/Home'
-import NotFound from './components/NotFound'
+import Login from './components/Login'
 import Jobs from './components/Jobs'
-import JobItemDetails from './components/JobItemDetails'
-
 import ProtectedRoute from './components/ProtectedRoute'
-
+import JobItemDetails from './components/JobItemDetails'
+import NotFound from './components/NotFound'
 import './App.css'
 
 // These are the lists used in the application. You can move them to any component needed.
@@ -49,69 +46,13 @@ const salaryRangesList = [
   },
 ]
 
-const locationList = [
-  {
-    locationId: 'HYDERABAD',
-    label: 'Hyderabad',
-  },
-  {
-    locationId: 'BANGALORE',
-    label: 'Bangalore',
-  },
-  {
-    locationId: 'CHENNAI',
-    label: 'Chennai',
-  },
-  {
-    locationId: 'DELHI',
-    label: 'Delhi',
-  },
-  {
-    locationId: 'MUMBAI',
-    label: 'Mumbai',
-  },
-]
-
-// Replace your code here
 const App = () => (
   <Switch>
     <Route exact path="/login" component={Login} />
     <ProtectedRoute exact path="/" component={Home} />
-    <ProtectedRoute
-      exact
-      path="/jobs"
-      render={() => (
-        <Jobs
-          employmentTypesList={employmentTypesList}
-          salaryRangesList={salaryRangesList}
-          locationList={locationList}
-        />
-      )}
-    />
+    <ProtectedRoute exact path="/jobs" component={Jobs} />
     <ProtectedRoute exact path="/jobs/:id" component={JobItemDetails} />
-    <Route exact path="/not-found" component={NotFound} />
-    <Redirect to="not-found" />
-  </Switch>
-
-export default App
-*/
-
-import {Route, Switch, Redirect} from 'react-router-dom'
-import Login from './components/Login)'
-import Home from './components/Home'
-import NotFound from './components/NotFound'
-import ProtectedRoute from './components/ProtectedRoute'
-
-import './App.css'
-
-// These are the lists used in the application. You can move them to any component needed.
-
-// Replace your code here
-const App = () => (
-  <Switch>
-    <Route exact path="/login" component={Login} />
-    <ProtectedRoute exact path="/" component={Home} />
-    <Route exact path="/not-found" component={NotFound} />
+    <Route path="/not-found" component={NotFound} />
     <Redirect to="not-found" />
   </Switch>
 )

@@ -1,26 +1,12 @@
-.not-found-route-bg {
-  background-color: #121212;
-  height: 100vh;
+.not-found-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
 }
-
-.not-found-image {
-  width: 30vw;
-}
-
-.not-found-title {
-  color: #f1f5f9;
-  font-size: 32px;
-  font-weight: 500;
-  font-family: 'Roboto';
-}
-
-.not-found-para {
-  color: #cbd5e1;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Roboto';
+.not-found-img {
+  width: 400px;
 }
