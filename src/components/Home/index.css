@@ -1,0 +1,124 @@
+/* .home-route-bg {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-route {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  margin-top: 60px;
+}
+
+.home-section-title {
+  color: #f1f5f9;
+  font-size: 72px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  margin-bottom: 30px;
+}
+
+.home-section-para {
+  color: #f1f5f9;
+  font-size: 38px;
+  font-weight: 300;
+  font-family: 'Roboto';
+  margin-top: 0px;
+}
+
+.find-jobs-button {
+  background-color: #6366f1;
+  border-width: 0px;
+  border-radius: 10px;
+  color: #f1f5f9;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  cursor: pointer;
+  outline: none;
+}
+*/
+
+/* Existing Home page styles */
+.home-route-bg {
+  background-color: #f9fbfe;
+  height: 100vh;
+  padding: 20px;
+}
+
+.todos-bg-container {
+  background-color: #f9fbfe;
+  height: 100vh;
+}
+
+.todos-heading {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 46px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.create-task-heading {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.create-task-heading-subpart {
+  color: #6366f1;
+}
+
+.todo-user-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #6366f1;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.todo-items-heading {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.todo-items-heading-subpart {
+  color: #6366f1;
+}
+
+.todo-items-container {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.todo-items-container li {
+  padding: 8px 12px;
+  background-color: #e9ecef;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
